@@ -141,31 +141,27 @@
 
     /* NAV */
     .wg-nav {
-      background: #1A1D21;
+      background: #0A0A0A;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 2rem;
-      height: 156px;
-      border-bottom: 1px solid #2C3137;
+      height: 110px;
+      border-bottom: 1px solid #1A1A1A;
       position: sticky; top: 0; z-index: 100;
     }
     .wg-logo {
       display: flex;
       align-items: center;
       text-decoration: none;
-      height: 156px;
-      width: 530px;
+      height: 110px;
       flex-shrink: 0;
     }
     .wg-logo img {
-      height: 156px;
-      width: 530px;
+      height: 110px;
+      width: auto;
       max-width: none;
-      object-fit: contain;
-      object-position: left center;
       display: block;
-      mix-blend-mode: screen;
     }
     .wg-nav-links {
       display: flex; gap: 28px;
@@ -194,7 +190,7 @@
     .wg-hero {
       background:
         linear-gradient(90deg, rgba(26,29,33,0.92) 0%, rgba(26,29,33,0.75) 40%, rgba(26,29,33,0.35) 100%),
-        url('images/hero-bg.png') center/cover no-repeat,
+        url('Images/hero-bg.png') center/cover no-repeat,
         #1A1D21;
       padding: 5rem 2rem 4rem;
       display: grid;
@@ -442,24 +438,21 @@
     .wg-footer-logo {
       display: flex;
       align-items: center;
-      height: 60px;
-      width: 200px;
+      height: 50px;
     }
     .wg-footer-logo img {
-      height: 60px;
-      width: 200px;
+      height: 50px;
+      width: auto;
       max-width: none;
-      object-fit: contain;
-      object-position: left center;
       opacity: 0.85;
     }
     .wg-footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
-      .wg-nav { padding: 0 1rem; height: 108px; }
-      .wg-logo { height: 108px; width: 340px; }
-      .wg-logo img { height: 108px; width: 340px; }
+      .wg-nav { padding: 0 1rem; height: 70px; }
+      .wg-logo { height: 70px; }
+      .wg-logo img { height: 70px; width: auto; }
       .wg-nav-links { display: none; }
       .wg-burger { display: block; }
       .wg-hero {
@@ -467,7 +460,7 @@
         padding: 3rem 1.5rem;
         background:
           linear-gradient(180deg, rgba(26,29,33,0.85) 0%, rgba(26,29,33,0.92) 100%),
-          url('images/hero-bg.png') center/cover no-repeat,
+          url('Images/hero-bg.png') center/cover no-repeat,
           #1A1D21;
       }
       .wg-hero::after { display: none; }
@@ -492,7 +485,7 @@
 
   <nav class="wg-nav">
     <a href="#" class="wg-logo" aria-label="Welders Group — strona główna">
-      <img src="images/logo.jpg" alt="Welders Group" />
+      <img src="Images/logo.png" alt="Welders Group" />
     </a>
     <ul class="wg-nav-links">
       <li><a href="#o-nas">O nas</a></li>
@@ -659,7 +652,7 @@
   </section>
 
   <footer class="wg-footer">
-    <span class="wg-footer-logo"><img src="images/logo.jpg" alt="Welders Group" /></span>
+    <span class="wg-footer-logo"><img src="Images/logo.png" alt="Welders Group" /></span>
     <span class="wg-footer-copy">© 2025 Welders Group. Wszelkie prawa zastrzeżone.</span>
   </footer>
 
