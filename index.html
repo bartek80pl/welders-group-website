@@ -304,15 +304,15 @@
     /* HERO */
     .wg-hero {
       background:
-        linear-gradient(90deg, rgba(26,29,33,0.92) 0%, rgba(26,29,33,0.75) 40%, rgba(26,29,33,0.35) 100%),
+        linear-gradient(90deg, rgba(26,29,33,0.90) 0%, rgba(26,29,33,0.60) 45%, rgba(26,29,33,0.08) 100%),
         url('images/hero-bg.png') center/cover no-repeat,
         #1A1D21;
-      padding: 5rem 2rem 4rem;
+      padding: 7rem 2rem 6rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: center;
-      min-height: 520px;
+      min-height: 700px;
       position: relative;
       overflow: hidden;
     }
@@ -689,7 +689,7 @@
     <button class="wg-burger" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
   </nav>
 
-  <section class="wg-hero" id="o-nas">
+  <section class="wg-hero">
     <div class="wg-hero-glow" aria-hidden="true"></div>
     <div class="wg-sparks" aria-hidden="true">
       <span style="--dx: 80px;  --dy: -40px; left: 55%; top: 60%; animation-delay: 0s;"></span>
@@ -729,40 +729,16 @@
     </div>
   </section>
 
-  <section class="wg-section" id="realizacje">
-    <div class="wg-section-header reveal">
-      <p class="wg-section-eyebrow">Portfolio</p>
-      <h2 class="wg-section-title">Wybrane realizacje</h2>
-    </div>
-    <div class="wg-portfolio-grid">
-      <article class="wg-portfolio-card reveal reveal-delay-1" data-lightbox="images/norblin-1.jpg" data-caption="Norblin Buch — łuki stalowe (Warszawa, 2021)">
-        <div class="wg-portfolio-img">
-          <span class="wg-portfolio-tag">Konstrukcja stalowa</span>
-          <img src="images/norblin-1.jpg" alt="Konstrukcja stalowa - Norblin Buch, Warszawa" loading="lazy" />
-        </div>
-        <div class="wg-portfolio-info">
-          <h3 class="wg-portfolio-name">Norblin Buch — łuki stalowe</h3>
-          <p class="wg-portfolio-meta">Warszawa · 2021 · Fabryka Norblina</p>
-        </div>
-      </article>
-      <article class="wg-portfolio-card reveal reveal-delay-2" data-lightbox="images/rura-1.jpg" data-caption="Instalacja rurowa ze stali nierdzewnej — spaw obwodowy TIG">
-        <div class="wg-portfolio-img">
-          <span class="wg-portfolio-tag">Instalacje przemysłowe</span>
-          <img src="images/rura-1.jpg" alt="Spaw TIG na rurze ze stali nierdzewnej" loading="lazy" />
-        </div>
-        <div class="wg-portfolio-info">
-          <h3 class="wg-portfolio-name">Spaw obwodowy TIG</h3>
-          <p class="wg-portfolio-meta">Stal nierdzewna 1.4301 · gotowe do RTG</p>
-        </div>
-      </article>
-      <a href="realizacje.html" class="wg-portfolio-card wg-portfolio-card-more reveal reveal-delay-3">
-        <div>
-          <i class="ti ti-arrow-right" style="font-size:36px; display:block; margin-bottom:10px; color:#E63946;"></i>
-          <span class="wg-portfolio-more-text">Zobacz wszystkie realizacje</span>
-        </div>
-      </a>
+  <section class="wg-section" id="o-nas">
+    <div class="container" style="max-width:1200px; margin:0 auto;">
+      <div class="wg-section-header reveal">
+        <p class="wg-section-eyebrow">Kim jesteśmy</p>
+        <h2 class="wg-section-title">O nas</h2>
+      </div>
+      <p class="reveal" style="font-size:16px; color:#3A3A3A; line-height:1.9; max-width:820px;">Welders Group to firma specjalizująca się w profesjonalnym spawaniu przemysłowym TIG rurociągów ze stali nierdzewnej i węglowej. Pracujemy dla najbardziej wymagających branż — browarnictwa, farmaceutyki, przemysłu spożywczego i chemicznego. Posiadamy certyfikat ISO 9606-1 wydany przez TÜV SÜD oraz ponad 20 lat doświadczenia. Nasze spawy poddawane są badaniom RTG. Siedziba firmy znajduje się we Wrocławiu. Wystawiamy fakturę VAT.</p>
     </div>
   </section>
+
 
   <section class="wg-section-alt" id="uslugi">
     <div class="wg-section-header reveal">
