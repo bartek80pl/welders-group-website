@@ -68,8 +68,11 @@
 
     /* HEADER PODSTRONY */
     .page-header {
-      background: linear-gradient(135deg, #1A1D21 0%, #2C3137 100%);
-      padding: 4rem 2rem 3rem;
+      background:
+        linear-gradient(90deg, rgba(26,29,33,0.90) 0%, rgba(26,29,33,0.60) 50%, rgba(26,29,33,0.30) 100%),
+        url('images/uslugi-bg.png') center/cover no-repeat,
+        #1A1D21;
+      padding: 5rem 2rem 4rem;
       position: relative;
       overflow: hidden;
     }
@@ -78,7 +81,7 @@
       position: absolute;
       left: -5%; bottom: -30%;
       width: 400px; height: 400px;
-      background: #E63946; opacity: 0.08;
+      background: #E63946; opacity: 0.06;
       border-radius: 50%; filter: blur(60px);
     }
     .page-header-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
