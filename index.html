@@ -683,9 +683,9 @@
       <li><a href="uslugi.html">Usługi</a></li>
       <li><a href="realizacje.html">Realizacje</a></li>
       <li><a href="certyfikaty.html">Certyfikaty</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    <a href="#kontakt" class="wg-nav-cta">Zapytaj o wycenę</a>
+    <a href="kontakt.html" class="wg-nav-cta">Zapytaj o wycenę</a>
     <button class="wg-burger" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
   </nav>
 
@@ -741,26 +741,6 @@
 
 
 
-  <section class="wg-contact" id="kontakt">
-    <div class="wg-contact-left reveal">
-      <h3>Skontaktuj się</h3>
-      <p>Przyjmiemy każde zlecenie spawalnicze — od prototypu po seryjną produkcję. Odpiszemy w ciągu 24 godzin.</p>
-      <div class="wg-contact-info">
-        <div class="wg-contact-row"><i class="ti ti-map-pin"></i> ul. Muflonowa 32, 55-003 Nadolice Wielkie</div>
-        <div class="wg-contact-row"><i class="ti ti-phone"></i> +48 787 932 241</div>
-        <div class="wg-contact-row"><i class="ti ti-mail"></i> biuro.weldersgroup@gmail.com</div>
-      </div>
-    </div>
-    <form class="wg-contact-form reveal reveal-delay-2" action="https://formspree.io/f/xeenyloe" method="POST">
-      <input type="text" name="imie_firma" placeholder="Imię i nazwisko / firma" required />
-      <input type="email" name="email" placeholder="E-mail" required />
-      <input type="tel" name="telefon" placeholder="Telefon (opcjonalnie)" />
-      <textarea name="wiadomosc" placeholder="Opisz zlecenie – materiał, wymiary, ilość..." required></textarea>
-      <input type="hidden" name="_subject" value="Nowe zapytanie ze strony Welders Group" />
-      <input type="hidden" name="_language" value="pl" />
-      <button type="submit" class="wg-btn-primary" style="align-self:flex-start;">Wyślij zapytanie</button>
-    </form>
-  </section>
 
   <footer class="wg-footer">
     <span class="wg-footer-logo"><img src="images/logo.png" alt="Welders Group" /></span>
@@ -775,6 +755,10 @@
   </div>
 
   <script>
+    // Wymuszenie pozycji scroll na samej górze przy załadowaniu strony
+    if (history.scrollRestoration) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+
     // Intersection Observer dla efektu fade-in przy scrollu
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
