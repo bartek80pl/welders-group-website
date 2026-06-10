@@ -68,11 +68,8 @@
 
     /* HEADER PODSTRONY */
     .page-header {
-      background:
-        linear-gradient(90deg, rgba(26,29,33,0.90) 0%, rgba(26,29,33,0.60) 50%, rgba(26,29,33,0.30) 100%),
-        url('images/uslugi-bg.png') center/cover no-repeat,
-        #1A1D21;
-      padding: 5rem 2rem 4rem;
+      background: linear-gradient(135deg, #1A1D21 0%, #2C3137 100%);
+      padding: 4rem 2rem 3rem;
       position: relative;
       overflow: hidden;
     }
@@ -81,7 +78,7 @@
       position: absolute;
       left: -5%; bottom: -30%;
       width: 400px; height: 400px;
-      background: #E63946; opacity: 0.06;
+      background: #E63946; opacity: 0.08;
       border-radius: 50%; filter: blur(60px);
     }
     .page-header-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
@@ -114,11 +111,23 @@
     .breadcrumb a:hover { color: #E63946; }
     .breadcrumb span { margin: 0 8px; }
 
-    /* KARTY USŁUG */
+    /* KARTY USŁUG — pełnoekranowe zdjęcie w tle */
     .services-section {
+      position: relative;
+      background: url('images/uslugi-bg.png') center/cover no-repeat;
+      min-height: 80vh;
+      padding: 5rem 2rem;
+    }
+    .services-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(8, 10, 12, 0.62);
+    }
+    .services-inner {
+      position: relative;
+      z-index: 1;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 4rem 2rem;
     }
     .wg-services-grid {
       display: grid;
@@ -127,8 +136,10 @@
     }
     .wg-service-card {
       padding: 2.25rem 2rem;
-      border: 1px solid #E5E0D8;
-      background: #fff;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(12, 14, 17, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       position: relative;
       overflow: hidden;
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s, box-shadow 0.3s;
@@ -142,13 +153,15 @@
     }
     .wg-service-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(230, 57, 70, 0.3);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+      border-color: rgba(230, 57, 70, 0.45);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.4);
     }
     .wg-service-card:hover::before { width: 100%; }
     .wg-service-icon {
       width: 52px; height: 52px;
-      background: #1A1D21; color: #E63946;
+      background: rgba(230,57,70,0.15);
+      border: 1px solid rgba(230,57,70,0.3);
+      color: #E63946;
       display: flex; align-items: center; justify-content: center;
       margin-bottom: 20px; font-size: 24px;
       border-radius: 12px;
@@ -158,11 +171,11 @@
     .wg-service-name {
       font-family: 'Oswald', sans-serif;
       font-weight: 500; font-size: 20px;
-      margin: 0 0 10px; color: #1A1D21;
+      margin: 0 0 10px; color: #fff;
       text-transform: uppercase; letter-spacing: 0.02em;
     }
     .wg-service-desc {
-      font-size: 15px; color: #6B6862;
+      font-size: 15px; color: rgba(255,255,255,0.65);
       line-height: 1.7; margin: 0;
     }
 
@@ -217,7 +230,7 @@
       .wg-burger { display: block; }
       .page-header { padding: 3rem 1.5rem 2.5rem; }
       .page-title { font-size: 32px; }
-      .services-section { padding: 2.5rem 1.5rem; }
+      .services-section { padding: 3rem 1.5rem; min-height: unset; }
       .wg-services-grid { grid-template-columns: 1fr; }
       .cta-section { padding: 3rem 1.5rem; }
       .cta-section h3 { font-size: 24px; }
@@ -256,6 +269,8 @@
   </header>
 
   <main class="services-section">
+    <div class="services-overlay" aria-hidden="true"></div>
+    <div class="services-inner">
     <div class="wg-services-grid">
 
       <div class="wg-service-card reveal reveal-d-1">
@@ -282,6 +297,7 @@
         <p class="wg-service-desc">Automatyczne spawanie TIG, w którym łuk obiega nieruchomą rurę o 360° w osłonie gazu obojętnego. Gwarantuje idealną powtarzalność, szczelność i najwyższą czystość spoin.</p>
       </div>
 
+    </div>
     </div>
   </main>
 
